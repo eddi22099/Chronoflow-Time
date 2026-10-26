@@ -1,0 +1,79 @@
+{
+  "theme": "Light",
+  "archetype": "4 (Swiss & High-Contrast)",
+  "domain": "SaaS / Productivity Dashboard",
+  "typography": {
+    "fonts": {
+      "heading": "Cabinet Grotesk",
+      "body": "IBM Plex Sans",
+      "mono": "JetBrains Mono"
+    },
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tighter leading-none font-black text-gray-900",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight font-bold text-gray-900",
+      "h3": "text-xl sm:text-2xl font-bold text-gray-900",
+      "h4": "text-lg sm:text-xl font-semibold text-gray-900",
+      "body": "text-base leading-relaxed text-gray-700",
+      "small": "text-sm text-gray-500",
+      "overline": "text-xs uppercase tracking-[0.2em] font-bold text-gray-500"
+    }
+  },
+  "colors": {
+    "background": "#ffffff",
+    "surface": "#f3f4f6",
+    "surface_secondary": "#e5e7eb",
+    "primary": "#000000",
+    "text_main": "#111827",
+    "text_muted": "#6b7280",
+    "accents": {
+      "success": "#34c759",
+      "warning": "#ffcc00",
+      "danger": "#ff3b30",
+      "info": "#002fa7"
+    },
+    "border": "#e5e7eb"
+  },
+  "layout_and_spacing": {
+    "philosophy": "Generous Spacing Philosophy. Optical alignment over geometrical alignment.",
+    "dashboard_grid": "grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6",
+    "card_style": "Flat solid surfaces. 1px solid border-gray-200, no shadow. Hover: slight lift (-translate-y-1), subtle shadow (shadow-sm). Max 4px or 8px border-radius.",
+    "container_padding": "Containers with borders must have internal padding (p-6 or p-8)."
+  },
+  "components": {
+    "buttons": "Subtle roundness (rounded-md max). High contrast. Primary: bg-black text-white hover:bg-gray-800. Accent CTA: Use functional colors like success green for 'Clock In'.",
+    "inputs": "Flat, sharp borders. 1px solid gray-300 focus:ring-2 focus:ring-black focus:border-black.",
+    "charts": "Shadcn chart components or Recharts. Minimalist design. Functional color coding. Line charts for trends, Bar charts for categories.",
+    "tables": "Dense rows, 1px bottom border per row. Hover state on rows. Left-aligned text.",
+    "navigation": "Sticky sidebar or top nav with 1px border. Nav bar must have a background (not completely transparent)."
+  },
+  "interactions": {
+    "hover": "Always explicitly set text color on hover (e.g., hover:bg-black hover:text-white).",
+    "focus": "Focus states must have HIGHER contrast than default state.",
+    "animation": "Micro-interactions for feedback. Minimalist. Meaningful animations that do not interfere with functionality."
+  },
+  "media": {
+    "avatars": [
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MjJ8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdCUyMHBvcnRyYWl0fGVufDB8fHx8MTc4MTQ5NTQxN3ww&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MjJ8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdCUyMHBvcnRyYWl0fGVufDB8fHx8MTc4MTQ5NTQxN3ww&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MjJ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdCUyMHBvcnRyYWl0fGVufDB8fHx8MTc4MTQ5NTQxN3ww&ixlib=rb-4.1.0&q=85"
+    ],
+    "logos": [
+      "https://images.pexels.com/photos/5420989/pexels-photo-5420989.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    ]
+  },
+  "icons": "Use lucide-react (already installed). Provide crisp, functional iconography.",
+  "testing": "All interactive and key informational elements MUST include a data-testid attribute in kebab-case based on role.",
+  "instructions_to_main_agent": [
+    "Follow Archetype 4 (Swiss & High-Contrast) for a clean, professional, and dense SaaS dashboard.",
+    "Implement the 'Control Room' grid for the dashboard (dense, strict hierarchy, max space utilization).",
+    "Use Cabinet Grotesk for headings and IBM Plex Sans for body text.",
+    "Do not use card components everywhere; favor cardless layouts or flat shapes with 1px borders.",
+    "Make sure forms (clock in, manual entry) use customized Shadcn UI components.",
+    "For the Timer / Clock-in widget, place it prominently (Top-Left North Star Metric area) and use Functional Colors (Green = Clocked In / Active, Red/Black = Clocked Out).",
+    "Provide Smart Empty States with Call to Actions if no time is logged or no entries exist.",
+    "Use Shadcn charts for team stats and hours logged.",
+    "Ensure all data-testid attributes are set correctly for all buttons, links, inputs, and interactive elements.",
+    "Create a clean Layout with Sidebar Navigation for Desktop and Hamburger for Mobile.",
+    "Provide a toggle/switch for views if necessary, but keep the core interface monochrome with functional accents."
+  ]
+}
